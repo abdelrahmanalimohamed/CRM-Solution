@@ -143,17 +143,11 @@ docker-compose up -d
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## 👥 Team
-
-- [Team Member 1] - Project Lead
-- [Team Member 2] - Senior Developer
-- [Team Member 3] - Developer
-
 ## 📞 Support
 
 For support, please:
 1. Check existing issues
 2. Create a new issue with detailed information
-3. Contact the development team
+3. Contact me
 
 ---
