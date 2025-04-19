@@ -2,7 +2,6 @@
 using CRM.SharedKernel.Base;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System.Threading;
 
 namespace CRM.SharedKernel.Events;
 
@@ -13,7 +12,6 @@ public class DomainEventDispatcher : IDomainEventDispatcher
 {
 	private readonly IMediator _mediator;
 	private readonly ILogger<DomainEventDispatcher> _logger;
-
 	public DomainEventDispatcher(IMediator mediator, ILogger<DomainEventDispatcher> logger)
 	{
 		_mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
