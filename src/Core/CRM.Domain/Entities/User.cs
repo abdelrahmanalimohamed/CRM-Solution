@@ -18,6 +18,7 @@ public class User : EntityBase
 		Role = role;
 		Activities = activities;
 		Tasks = tasks;
+		RaiseDomainEvent(new UserCreated(Id, userName, email, firstName, lastName, role));
 	}
 	public string Username { get; private set; }
 	public Email Email { get; private set; }

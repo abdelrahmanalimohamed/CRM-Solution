@@ -1,6 +1,4 @@
-﻿using CRM.Domain.Events.Tasks;
-
-namespace CRM.Domain.Entities;
+﻿namespace CRM.Domain.Entities;
 public class Task : EntityBase
 {
 	public Task(

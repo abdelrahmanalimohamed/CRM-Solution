@@ -5,15 +5,16 @@ public class Interaction : EntityBase
 		Guid Id , 
 		ActivityType activityType , 
 		string subject ,
-		string desciption ,
+		string description ,
 		DateRange dateRange ,
 		User assignedTo) : base(Id)
 	{
 		Type = activityType;
 		Subject = subject;
-		Description = desciption;
+		Description = description;
 		DateRange = dateRange;
 		AssignedTo = assignedTo;
+		RaiseDomainEvent(new InteractionCreated(Id, activityType, subject, description, dateRange, assignedTo));
 	}
 	public ActivityType Type { get; private set; }
 	public string Subject { get; private set; }

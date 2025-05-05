@@ -3,7 +3,7 @@
 namespace CRM.Domain.ValueObjects;
 public record PhoneNumber
 {
-	private const string PhoneNumberRegex = @"^\+?[1-9]\d{1,14}$"; // E.164 format (e.g., +1234567890)
+	private const string PhoneNumberRegex = @"^\+?[1-9]\d{1,14}$";
 	private readonly string _value;
 	private PhoneNumber(string value)
 	{

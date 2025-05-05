@@ -1,6 +1,4 @@
-﻿using CRM.Domain.Events.Deals;
-
-namespace CRM.Domain.Entities;
+﻿namespace CRM.Domain.Entities;
 public class Deal : EntityBase
 {
 	public Deal(
